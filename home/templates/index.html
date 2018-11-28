@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>辉达it - 为莘莘学子指路明灯,让人人都有理想前程</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="辉达it教育(www.huidait.com),专业从事web、php、java、ui设计、H5与移动开发等高端人才培训。小班授课，科学管理，保证百分百高薪就业，选择我们受益终身！">
+<meta name="Keywords" content="辉达it教育,huidait,教育,职业培训,前端培训,前端,UI设计,高薪就业">
+<meta name="360-site-verification" content="555e2d9f21fdc8a8348e27d00aa7c86c" class="">
+    <link rel="shortcut icon" href="./static/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/stylesheet.css">
+    <link rel="stylesheet" href="./static/css/js.css">
+    <style type="text/css">
+        .phone_icon{
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            background-image: url('./static/images/phone-icon.png');
+            background-size: 100% 100%;
+            margin-right: 4px; 
+        }
+        .own_font span:nth-child(1){
+            padding-right: 12px;
+            border-right: 1px solid #000;
+        }
+        .anchors_green{
+            display: block;
+            font-size: 30px;
+            color: #1073C4;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .yewu_one{
+            width: 189px;
+            height: 262px;
+            /*float: left;*/
+            display: inline-block;
+            vertical-align: middle;
+            background: #fff;
+            margin-left: 12px;
+        }
+        .yewu_one:hover{
+            box-shadow: 0px 2px 5px 3px #C1C1C1;
+        }
+        .yewu_one:nth-child(1){
+            margin-left: 0px;
+        }
+        .yewu_one img{
+            width: 189px;
+            height: 118px;
+            margin: 0 auto;
+        }
+        .yewu_box{
+            width: 188px;
+            height: 144px;
+        }
+        .yewu_intro{
+            display: block;
+            font-size: 14px;
+            color: #1B1A1A;
+            /*text-align:center;*/
+            padding: 49px 22px 0px 13px;
+        }
+        .anli_one{
+            width: 239px;
+            height: 231px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 6px auto;
+            margin-left: 10px;
+            position: relative;
+        }
+        .anli_one img{
+            width: 100%;
+            height: 100%;
+        }
+        .anli_one .one_font{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+            width: 100%;
+            height: 231px;
+            text-align: center;
+            font-size: 48px;
+            color: #fff;
+            background: rgba(83,179,255,0.7);
+            z-index: 2;
+        }
+        .anli_one .one_font .one_top{
+            display: block;
+            padding: 10px 0px;
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+        }
+        .anli_one .one_font .one_bottom{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -o-box-orient: vertical;
+            display: -o-box;
+            display: -moz-box;
+            -webkit-line-clamp: 5;
+            -o-line-clamp: 5;
+            -moz-line-clamp: 5;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            padding: 0px 20px;
+            margin-top: 10px;
+            height: 165px;
+            line-height:33px; 
+            overflow: hidden;
+            font-size: 18px;
+            color: #fff;
+
+        }
+        .anli_one:hover .one_font{
+            display: block;
+            cursor : pointer;
+        }
+        .function_little{
+            font-size: 14px;
+            color: #1073C4;
+            display: block;
+            text-align: center;
+            padding-bottom: 39px;
+        }
+        .function_one{
+            flex : 1;
+            text-align: center;
+            padding: 30px 0px;
+        }
+        .function_one span{
+            display: block;
+            padding: 12px 10px;
+            font-size: 14px;
+            color: #000;
+            font-weight:normal;
+        }
+        .function_one span:hover{
+            font-size: 20px;
+            -webkit-transform : fontSize 2s;
+            -moz-transform : fontSize 2s;
+            -o-transform : fontSize 2s;
+        }
+        .xian_one{
+            display: inline-block;
+            vertical-align: middle;
+            width: 238px;
+            height: 208px;
+            background: #fff;
+            margin-left: 14px;
+        }
+        .xian_one:hover{
+            box-shadow: 2px 2px 5px 3px #C1C1C1;
+        }
+        .xian_one:nth-child(1){
+            margin-left: 0px;
+        }
+        .xian_one_top{
+            width: 238px;
+            height: 101px;
+            background:#FBB739;
+            display: block;
+            font-size: 48px;
+            color: #fff;
+            text-align: center;
+            line-height: 101px;
+            letter-spacing: 8px;
+        }
+        .xian_one_bot{
+            width: 238px;
+            height: 107px;
+            display: block;
+            position: relative;
+            box-shadow: 0px 2px 2px 0px #ccc;
+        }
+        .bot_font{
+            color: #000;
+            font-size: 14px;
+            height: 20px;
+            width: 150px;
+            line-height: 20px;
+            display: block;
+            position: absolute;;
+            top: 30%;
+            left: 50%;
+            text-align: center;
+            transform : translate(-50%,-50%);
+        }
+        .qudao_one{
+            display: block;
+            width: 25%;
+            float: left;
+            height: 176px;
+        }
+        .qudao_one img{
+            width: 34px;
+            height: auto;
+            margin: 21px auto;
+            display: block;
+        }
+        @keyframes mymove{
+            form { transform:scale(1) rotateY(0deg); }
+            to { transform:scale(1.5) rotateY(-360deg);}
+        }
+        @-webkit-keyframes mymove{
+            form { transform:scale(1) rotateY(0deg); }
+            to { transform:scale(1.5) rotateY(-360deg);}
+        }
+        @-moz-keyframes mymove{
+            form { transform:scale(1) rotateY(0deg); }
+            to { transform:scale(1.5) rotateY(-360deg);}
+        }
+        @-o-keyframes mymove{
+            form { transform:scale(1) rotateY(0deg); }
+            to { transform:scale(1.5) rotateY(-360deg);}
+        }
+        .qudao_one img:hover{
+            -webkit-animation:mymove 2s infinite;
+            -moz-animation:mymove 2s infinite;
+            -o-animation:mymove 2s infinite;
+        }
+        .qudao_name{
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+        }
+        .qudao_intro{
+            display: block;
+            font-size: 14px;
+            padding: 20px 0px;
+            text-align: center;
+            color: #666;
+        }
+        #model{
+            width: 100%;
+            background-image: url('./static/images/model_bg.png');
+            background-size: 100% 100%;
+        }
+        #model .anchors_green{
+            color: #fff;
+            padding-bottom: 10px;
+        }
+        #model .function_little{
+            color: #fff;
+        }
+        #prospect{
+            width: 100%;
+            background-image: url('./static/images/prospect_bg.png');
+            background-size: 100% 100%;
+         }
+        @media all and (device-width: 1920px) {
+            #model{
+                height: 900px;
+            }
+            #prospect{
+                height: 451px;
+            }
+        }
+        @media all and (device-width: 1280px) {
+            #model{
+                height: 600px;
+            }
+            #prospect{
+                height: 300px;
+            }
+        }
+        @media all and (device-width: 1440px) {
+            #model{
+                height: 630px;
+            }
+            #prospect{
+                height: 338px;
+            }
+        }
+        @media all and (device-width: 1366px) {
+            #model{
+                height: 595px;
+            }
+            #prospect{
+                height: 320px;
+            }
+        }
+        .box{
+            width: 1000px;
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto;
+            /*padding: 50px 0px;*/
+                }
+        .flipster ul {
+            width: 200px!important;
+        }
+        .programme_row{
+            width: 317px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+        }
+        .programme_row img:hover{
+            box-shadow: 0px 5px 8px 4px #c1c1c1;
+        }
+        @keyframes mymove2{
+            form { transform: rotateY(0deg); }
+            to { transform:rotateY(-360deg);}
+        }
+        @-webkit-keyframes mymove2{
+            form { transform: rotateY(0deg); }
+            to { transform:rotateY(-360deg);}
+        }
+        @-moz-keyframes mymove2{
+            form { transform: rotateY(0deg); }
+            to { transform:rotateY(-360deg);}
+        }
+        @-o-keyframes mymove2{
+            form { transform: rotateY(0deg); }
+            to { transform:rotateY(-360deg);}
+        }
+        .programme_row img:hover+.programme_row_name{
+            -webkit-animation:mymove2 4s infinite;
+            -moz-animation:mymove2 4s infinite;
+            -o-animation:mymove2 4s infinite;
+        }
+        .programme_row:nth-child(1){
+            margin-left: 0px;
+        }
+        .programme_row img{
+            width: 100%;
+            height: auto;
+        }
+        .programme_row_name{
+            display: block;
+            padding: 26px 0px 22px;
+            text-align:center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+        .programme_row_intro{
+            display: block;
+            font-size: 16px;
+            color: #222;
+            line-height: 24px;
+        }
+        .prospect_name{
+            font-size: 24px;
+            color: #fff;
+            padding-bottom: 30px;
+        }
+        .prospect_intro{
+            font-size: 16px;
+            line-height: 24px;
+            display: block;
+            color: #fff;
+        }
+        .need_img{
+            width: 534px;
+            height: 60px;
+            background-image: url('./static/images/need_bg.png');
+            background-size: 100% 100%;
+            display: block;
+            padding-left: 30px;
+            line-height: 50px;
+            color: #fff;
+            margin: 0 auto;
+        }
+        .need_row{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .own_need{
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            color: #666;
+            width: 130px;
+        }
+        .own_text{
+            width: 461px;
+            height: 108px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px  solid #DBDBDB;
+            background: #fff;
+            padding: 20px 19px;
+            resize:none;
+            outline: none;  
+        }
+        .star_red{
+            color:red;
+            display:inline-block;
+            vertical-align:middle;
+            margin-right:6px;
+        }
+        .need_submit{
+            width: 121px;
+            height: 35px;
+            line-height: 35px;
+            color: #fff;
+            text-align:center;
+            background: #1073C4;
+            border: none;
+            margin-left: 520px;
+        }
+        #top{
+            position : fixed;
+            top : 0px;
+            left : 0px;
+            z-index : 9999;
+        }
+    </style>
+</head>
+<body>
+	<div class="content" id="top">
+        <div class="content_box" style="background:#fff;">
+            <div class="navs" style="width:1018px;margin:0 auto;overflow:hidden;"> 
+                <ul style="width:200px;display:inline-block;vertical-align:middle;">
+                    <li class="img_img" style="vertical-align: top;background:#fff;">
+                        <a href="index.html">
+                            <img src="./static/images/logo2.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav" style="display:inline-block;vertical-align:middle;width:800px;text-align:right;"> 
+                    <ul>
+                        <li class="change_active">
+                            <span class="change" href="#ext">首页</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span class="change" href="#yewu">主营业务</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span class="change" href="#anli">经典案例</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span class="change" href="#function">业务介绍</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span class="change" href="#model">企业模板</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span class="change" href="#programme">解决方案</span>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <span href="#need">联系我们</span>
+                            <span class="line"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="content" style="margin-top:70px;">
+		<div class="content_box">
+			<div id="ext">
+				<div class="banner" id="b06">
+				    <ul>
+				    	{% for item in lunbo %}
+				        	<li><img class="sliderimg" height="450" src="{{ item.img }}" alt="" width="100%" ></li>
+				    	{% endfor %}
+				    </ul>
+				    <a href="javascript:void(0);" class="unslider-arrow06 prev"><img class="arrow" id="al" src="./static/images/arrowl.png" alt="prev" width="20" height="35"></a>
+				    <a href="javascript:void(0);" class="unslider-arrow06 next"><img class="arrow" id="ar" src="./static/images/arrowr.png" alt="next" width="20" height="37"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="content_box" id="yewu">
+			<div class="anchors">
+				<div class="anchors_green">主营业务</div>
+				<div class="anchors_bottom">
+                    {% for item in yewu %}
+                        <a href="yewu/{{ item.id }}">
+        					<div class="yewu_one">
+        						<img src="{{ item.img }}" alt="">
+        						<div class="yewu_box">
+        							<span class="yewu_intro">{{ item.name }}</span>
+        						</div>
+        					</div>
+                        </a>
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="anli">
+			<div class="anchors" style="padding:70px 0px 72px;background:#fff;">
+				<div class="anchors_green">经典案例</div>
+				<div class="anchors_bottom">
+					{% for item in anli %}
+                        <a href="info/{{ item.id }}">
+    						<div class="anli_one">
+    							<img src="{{ item.img }}" alt="">
+    							<div class="one_font">
+    								<span class="one_top">{{ item.name }}</span>
+    								<span class="one_bottom">{{ item.intro }}</span>
+    							</div>
+    						</div>
+                        </a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="function">
+			<div class="anchors" style="background:#fff;margin-top:0px;padding-top:70px;">
+				<div class="anchors_green">小程序功能特点</div>
+				<p class="function_little">小程序入口、功能更新迭代迅速，且在持续更新，未来营销能力更值得期待</p>
+				<div class="anchors_bottom" style="display:flex;">
+					<div class="function_one">
+						<span>无需下载，用完即走</span>
+						<span>一次开发，多端兼容 </span>
+					</div>
+					<div class="function_one">
+						<span>线上线下，无缝对接</span>
+						<span>2兆体积，不占内存</span>
+					</div>
+					<div class="function_one">
+						<span>入口丰富，引流便捷</span>
+						<span>功能丰富，媲美APP</span>
+					</div>
+					<div class="function_one">
+						<span>访问速度，优于H5</span>
+						<span>应用场景，不胜枚举</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="xianzhuang">
+			<div class="anchors">
+				<div class="anchors_green">微信生态现状</div>
+				<div class="anchors_bottom" style="padding:6px 0px;">
+					<div class="xian_one">
+						<span class="xian_one_top">9亿</span>
+						<span class="xian_one_bot">
+							<span class="bot_font">9亿+稳定用户<br>营造千亿市场机遇</span>
+						</span>
+					</div>
+					<div class="xian_one">
+						<span class="xian_one_top" style="background:#4CC885;">流量</span>
+						<span class="xian_one_bot">
+							<span class="bot_font">营销属性强大<br>公众号+内容营销开启 流量红利时代</span>
+						</span>
+					</div>
+					<div class="xian_one">
+						<span class="xian_one_top" style="background:#F8726E;">93%</span>
+						<span class="xian_one_bot">
+							<span class="bot_font">93%高渗透率<br>覆盖一线城市,渗透二 三线城市</span>
+						</span>
+					</div>
+					<div class="xian_one">
+						<span class="xian_one_top" style="background:#6977F8;">转化</span>
+						<span class="xian_one_bot">
+							<span class="bot_font">小程序新机遇<br>赋能公众号,开启引流、 转化新模式</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="qudao">
+			<div class="anchors" style="padding:70px 0px 72px;background:#fff;">
+				<div class="anchors_green">拓展线上新渠道，营销入口不断增加</div>
+				<div class="anchors_bottom" style="height:353px;">
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one01.png" alt="">
+						<p class="qudao_name">二维码</p>
+						<span class="qudao_intro">扫码使用，引流到店</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one02.png" alt="">
+						<p class="qudao_name">搜索</p>
+						<span class="qudao_intro">模糊搜索，方便快捷</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one03.png" alt="">
+						<p class="qudao_name">关联公众号</p>
+						<span class="qudao_intro">对接内容营销，提高粉丝转化</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one04.png" alt="">
+						<p class="qudao_name">微信群</p>
+						<span class="qudao_intro">精准分享，提高使用率</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one05.png" alt="">
+						<p class="qudao_name">好友分享</p>
+						<span class="qudao_intro">推荐小程序给微信好友</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one06.png" alt="">
+						<p class="qudao_name">附近的小程序</p>
+						<span class="qudao_intro">对接线上方圆五公里线上用户</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one07.png" alt="">
+						<p class="qudao_name">支付结果页</p>
+						<span class="qudao_intro">微信支付凭证页面的入口</span>
+					</div>
+					<div class="qudao_one">
+						<img src="./static/images/qudao_one08.png" alt="">
+						<p class="qudao_name">四十多入口</p>
+						<span class="qudao_intro"> 期待更多</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="model">
+			<div class="anchors" style="padding:70px 0px 72px;margin-top:0px;">
+				<div class="anchors_green">辉达小程序开发工具，全行业模板开发</div>
+				<p class="function_little">轻量级应用，海量级引流，适应众多场景</p>
+				<div class="anchors_bottom">
+					<div class="box">
+						<div class="flipster">
+					        <ul>
+					        	{% for item in muban %}
+						            <li>
+						                <a href="muban/{{ item.id }}" class="Button Block">
+						                    <img src="{{ item.img }}" width="300" height="400"/>
+						                </a>
+						            </li>
+						        {% endfor %}
+					        </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="programme">
+			<div class="anchors">
+				<div class="anchors_green">解决方案</div>
+				<div class="anchors_bottom">
+					{% for item in fangan %}
+						<div class="programme_row">
+							<img src="{{ item.img }}" alt="">
+							<p class="programme_row_name">{{ item.name }}</p>
+							<span class="programme_row_intro">{{ item.intro }}</span>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="prospect">
+			<div class="anchors" style="padding:70px 0px 72px;">
+				<div class="anchors_bottom">
+					<p class="prospect_name">微信小程序前景展望</p>
+					<span class="prospect_intro">·  4年内最大的移动互联网商机，小程序撬起移动端千亿市场红利</span>
+					<span class="prospect_intro">· 企业营销方式得到丰富，众多入口对接微信9亿+用户，引流、转化能力显著</span>
+					<span class="prospect_intro">· 打通用户、内容信息、商品服务之间的关系，有效形成企业微信的商业闭环</span>
+					<span class="prospect_intro">· 大幅度降低中小企业开发成本，缩短上线时间，简化推广流程</span>
+					<span class="prospect_intro">· 小程序入口、功能更新迭代迅速，且在持续更新，未来营销能力更值得期待</span>
+
+				</div>
+			</div>
+		</div>
+		<div class="content_box" id="need">
+			<div class="anchors">
+				<div class="anchors_bottom" style="padding-bottom:40px;">
+					<span class="need_img">以上产品还未完全满足我的所有需求，在下方 提交我的专属需求</span>
+					<form action="add/" method="post">
+						{% csrf_token %}
+						<div class="need_row">
+							<span class="own_need">我的专属需求：</span>
+							<textarea name="content" class="own_text" placeholder="我的需求描述"></textarea>
+						</div>
+						<div class="need_row">
+							<span class="own_need" style="text-align:right;"><span class="star_red">*</span>姓名：</span>
+							<input class="own_name" name="username" type="text">
+							<span class="own_need" style="text-align:right;"><span class="star_red">*</span>手机号：</span>
+							<input class="own_name" name="phone" type="Text">
+						</div>
+						<div class="need_row">
+							<input class="need_submit" type="submit" value="确认提交">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="show">
+		<ul>
+			<li  class="cir"><span href="#yewu"></span></li>
+			<li  class="cir cirle_active"><span href="#anli"></span></li>
+			<li class="cir"><span href="#function" ></span></li>
+			<li class="cir"><span href="#xianzhuang"></span></li>
+			<li class="cir"><span href="#qudao"></span></li>
+			<li class="cir"><span href="#model"></span></li>
+			<li class="cir"><span href="#programme"></span></li>
+			<li class="cir"><span href="#prospect"></span></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<footer>
+		<div class="footer_box">
+			<div class="campany_box">
+				<div class="campany_content">
+					<p class="campany_title">联系方式</p>
+					<span class="campany_details">邮箱：{{ baseInfo.email }}</span>
+					<span class="campany_details">Tel：{{ baseInfo.tel }}</span>
+					<span class="campany_details">网址：{{ baseInfo.www }}</span>
+					<span class="campany_details">电话：{{ baseInfo.phone }}</span>
+					<span class="campany_details">公司地址：{{ baseInfo.address }}</span>
+				</div>
+				<div class="campany_content">
+					<p class="campany_title">工作时间</p>
+					<span class="campany_details">周一至周五:9:00am to 6:00pm</span>
+					<span class="campany_details">周五至周六:9:00am to 12:00am</span>
+					<span class="campany_details">周日:休息</span>
+				</div>
+				<div class="campany_content">
+					<p class="campany_title">关注我们</p>
+					<div class="imges">
+						<div class="im">
+							<img src="{{ baseInfo.gzh }}" alt="">
+							<p>辉达公众号</p>
+						</div>
+						<div class="im">
+							<img src="{{ baseInfo.wx }}" alt="">
+							<p>个人公众号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="./static/js/jquery-3.2.1.min.js"></script>
+<script src="./static/js/unslider.min.js"></script>
+<script src="./static/js/index.js"></script>
+<script src="./static/js/js.js"></script>
+<script>
+     // $(document).ready(function(){
+  //        $(".title").click(function(){
+  //            var id=$(this).data("id");
+  //            var name=$(this).data("name");
+  //            alert("Id: "+id+" ; Name: "+name);});
+  //    });
+    $(window).scroll(function(){
+        if($(window).scrollTop() < 300){
+            $('.nav ul li').eq(0).addClass('change_active');
+            $('.nav ul li').eq(0).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() < 798 && $(window).scrollTop() > 300){
+            $('.nav ul li').eq(1).addClass('change_active');
+            $('.nav ul li').eq(1).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() < 1446 && $(window).scrollTop() > 798){
+            $('.nav ul li').eq(2).addClass('change_active');
+            $('.nav ul li').eq(2).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() <2750 && $(window).scrollTop() >1446){
+            $('.nav ul li').eq(3).addClass('change_active');
+            $('.nav ul li').eq(3).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() < 3610 && $(window).scrollTop() > 2750){
+            $('.nav ul li').eq(4).addClass('change_active');
+            $('.nav ul li').eq(4).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() < 4410  && $(window).scrollTop() > 3610){
+            $('.nav ul li').eq(5).addClass('change_active');
+            $('.nav ul li').eq(5).siblings('li').removeClass('change_active');
+        }else if($(window).scrollTop() > 4410){
+            $('.nav ul li').eq(6).addClass('change_active');
+            $('.nav ul li').eq(6).siblings('li').removeClass('change_active');
+        }
+    })
+    $('.nav ul li').click(function(){
+        var index = $(this).index();
+        console.log($(window).scrollTop())
+        $(this).addClass('change_active');
+        $(this).siblings('li').removeClass('change_active');
+        if(index==0){
+            $(window).scrollTop(0);
+        }else if(index==1){
+            $(window).scrollTop(300);
+            console.log($(window).scrollTop())
+        }else if(index==2){
+            $(window).scrollTop(749);
+        }else if(index==3){
+            $(window).scrollTop(1447);
+        }else if(index==4){
+            $(window).scrollTop(2751);
+        }else if(index==5){
+            $(window).scrollTop(3611);
+        }else if(index==6){
+            $(window).scrollTop(4140);
+        }
+    })
+</script>
+</html>

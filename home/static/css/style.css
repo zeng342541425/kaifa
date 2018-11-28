@@ -1,0 +1,370 @@
+html{width:100%;overflow-x:hidden;}
+*{
+	margin:0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: '微软雅黑';
+	width:100%;
+	min-width: 1018px;
+	max-width: 1920px;
+	background: #f0f0f0;
+	overflow-x:hidden;
+}
+
+@font-face {
+ font-family: '冬青黑体简体中文W6';
+ src: url('../fonts/冬青黑体简体中文W6.eot');
+ src: local('../fonts/冬青黑体简体中文W6 Regular'),
+        local('../fonts/冬青黑体简体中文W6'),
+        url('../fonts/冬青黑体简体中文W6.ttf#冬青黑体简体中文W6') format('ttf'),
+        url('../fonts/冬青黑体简体中文W6.otf#冬青黑体简体中文W6') format('truetype'),
+        url('../fonts/冬青黑体简体中文W6.svg#冬青黑体简体中文W6') format('svg');
+} 
+.content{
+	width: 100%;
+	min-width: 1018px;
+	max-width: 1920px;
+	background: #f0f0f0;
+	/*font-family: url(../fonts/冬青黑体简体中文W6.ttc);*/
+}
+.content_box{
+	width: 100%;
+	margin:0 auto;
+	/*background: red;*/
+}
+.nav{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	width: 1018px;
+    margin: 0 auto;
+}
+.navs{
+	height: 70px;
+    line-height: 70px;
+     text-align: center; 
+    color: #fff;
+    width: 718px;
+    /*margin: 0 auto;*/
+    margin-left: 140px;
+}
+.navs img{
+	width: 185px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top_nav_title{
+	display: block;
+	/*vertical-align: middle;*/
+	width: 100%;
+	line-height: 18px;
+	height: 18px;
+	font-size: 12px;
+	height: 50%;
+	color: #0B6EC7;
+	margin-left:10px;
+}
+.navs ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav ul li{
+	display: inline-block;
+	font-size: 16px;
+	/*color: #fff;*/
+	padding: 0px 20px;
+	height: 50px;
+	line-height: 50px; 
+}
+.nav ul li a{
+	color: #fff;
+}
+.nexts{
+	position: relative;
+	z-index: 99;
+}
+.nav ul li img{
+	width: 70px;
+	height: auto;
+	margin:10px auto 0px;
+}
+.nav ul li{
+	padding: 0px 20px;
+	cursor: pointer;
+}
+.nav ul li span{
+	padding: 10px 0px;
+	color : #000;
+}
+.nav ul li:hover .line{
+	/*color: #1073c4;
+	border-bottom: 2px solid rgba(2,157,255,0.7);*/
+	width: 100%;
+	padding: 0px;
+	transition : width 0.2s;
+}	
+.change_active span{
+	color: #1073c4;
+}
+.line{
+	width: 0%;
+	height: 2px;
+	display: block;
+	border-radius: 2px;
+	background: rgba(2,157,255,0.7);
+}
+.change_active .line{
+	width: 100%;
+	transition : width 0.2s;
+	padding: 0px;
+}
+.change_active .change{
+	color: #1073c4;
+}
+.img_img{
+	background: #0B6EC7;
+}
+.nav ul .img_img:hover{
+	background: #0B6EC7;
+}
+/*导航结束*/
+/*轮播图*/
+.banner { position: relative; overflow: auto; text-align: center;}
+		.banner li { list-style: none; }
+		.banner ul li { float: left; }
+		#b06 { width: 640px;}
+		#b06 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+		#b06 .dots li{ 
+			display: inline-block; 
+			width: 10px; 
+			height: 10px; 
+			margin: 0 4px; 
+			text-indent: -999em; 
+			border: 2px solid #fff; 
+			border-radius: 6px; 
+			cursor: pointer; 
+			opacity: .4; 
+			-webkit-transition: background .5s, opacity .5s; 
+			-moz-transition: background .5s, opacity .5s; 
+			transition: background .5s, opacity .5s;
+		}
+		#b06 .dots li.active 
+		{
+			background: #fff;
+			opacity: 1;
+		}
+		#b06 .arrow { position: absolute; top: 200px;}
+		#b06 #al { left: 15px;}
+		#b06 #ar { right: 15px;}
+.anchors{
+	width: 100%;
+	min-width: 1018px;
+	margin-top:60px;
+}
+.top_title{
+	font-size: 30px;
+	color: #0092E5;
+	display: block;
+	text-align: left;
+	padding: 6px 20px;
+	display: inline-block;
+	margin: 20px auto 40px;
+	border-radius: 10px;
+	font-weight: bold;
+	border: 1px solid #008AE8;
+	font-family: '冬青黑体简体中文W6';
+}
+.top_title:hover{
+	background: #008AE8;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.anchors_intro{
+	color:rgba(1,40,111,1);
+	line-height:27px;
+	font-size: 18px;
+	z-index: 2;
+}
+.anchors_task{
+	font-size:18px;
+	color:rgba(14,46,131,0.5);
+	padding: 9px 0px 35px;
+}
+.anchors_top{
+	text-align: center;
+}
+.anchors_bottom{
+	width: 100%;
+	max-width: 1018px;
+	min-width: 1018px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+/*footer开始*/
+footer{
+	width: 100%;
+	padding: 40px 0px 30px;
+	background: #165DB6;
+}
+.footer_box{
+	width: 1018px;
+	min-width: 1018px;
+	margin: 0 auto;
+}
+.clear{
+	width: 100%;
+	height: 20px;
+	background: #F9CE43;
+	clear: both;
+}
+.campany_box{
+	width: 100%;
+	height: 280px;
+	display: inline-block;
+	vertical-align: top;
+	display: flex;
+}
+.campany_content{
+	flex : 1;
+	color: #fff;
+}
+.campany_title{
+	padding-bottom: 44px;
+}
+.campany_details{
+	display: block;
+	padding: 10.5px 0px;
+	font-size: 14px;
+}
+.full{
+	width: 100%;
+	height: auto;
+}
+.full img{
+	width: 100%;
+	height: auto;
+}
+.imges{
+	width: 100%;
+}
+.im{
+	width: 131px;
+	display: inline-block;
+	vertical-align: top;
+}
+.im img{
+	display: block;
+	width: 111px;
+	height: 104px;
+}
+.im p{
+	padding: 10px 0px;
+	width: 111px;
+	text-align: center;
+}
+.look_details{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size:20px;
+	color: #fff;
+	background: #F4DA48;
+	margin-top: 45px;
+	border-radius: 45px;
+}
+.look_details:hover{
+	background: #0092E5;
+	color: #fff;
+}
+.address_box{
+	width: 100%;
+	max-width: 1920px;
+	min-width: 1018px;
+	height: 428px;
+	background-image: url(../images/address_box.png);
+	background-position: center center;
+}
+.address_row{
+	padding:15px 0px;
+}
+.logo_icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 43px;
+}
+.address_name{
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+}
+.address_content{
+	width: 100%;
+	color: #fff;
+}
+.address_left{
+	width: 680px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.address_right{
+	width: 320px;
+	display: inline-block;
+	vertical-align: top;
+}
+.left_title{
+	font-size: 22px;
+	line-height: 22px;
+}
+.left_intro{
+	padding:20px 0px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+}
+.left_white{
+	display: inline-block;
+	vertical-align: middle;
+	width: 120px;
+	height: 30px;
+	background: #fff;
+	margin-left: 20px;
+}
+.plece_help{
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 40px;
+	text-align: center;
+	background: #0C72E9;
+	margin: 30px auto;
+	color: #fff;
+}
+.address_phone{
+	display: inline-block;
+	vertical-align: top;
+	width: 74px;
+	height: 65px;
+	margin-top: 30px;
+}
+.address_tel{
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	margin-left: 20px;
+	line-height: 33px;
+	margin-top: 30px;
+}
