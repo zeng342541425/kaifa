@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'py_kaifa',
         'USER': 'root',
-        'PASSWORD': '8rsA6Vkk3WtmA',
+        'PASSWORD': '8rsA6Vkk3WtmA111',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS':{'isolation_level':None},
