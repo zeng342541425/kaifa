@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect
 # 网站首页
 def index(request):
     from home import models
-    baseInfo=models.baseInfo.objects.get(id=1)   #基本信息
+    baseInfo=models.baseInfo.objects.get(id=11)   #基本信息
     lunbo=models.lunbo.objects.all()   #轮播图
     anli=models.anli.objects.all()   #轮播图
     muban=models.muban.objects.all()   #轮播图
