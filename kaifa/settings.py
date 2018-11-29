@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'py_kaifa',
         'USER': 'root',
         'PASSWORD': '8rsA6Vkk3WtmA',
-        'HOST': '47.104.12.196',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS':{'isolation_level':None},
     }

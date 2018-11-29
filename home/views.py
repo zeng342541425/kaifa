@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 
 
 # Create your views here.
+# 网站首页
 def index(request):
     from home import models
     baseInfo=models.baseInfo.objects.get(id=1)   #基本信息
